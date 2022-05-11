@@ -30,7 +30,7 @@ $(document).ready(function(){
 $('.carousel').owlCarousel({
    margin:20,
    loop:true,
-   autoplayTimeOut: 2000,
+   autoplayTimeOut: 1000,
    autoplayHoverPause:true,
    responsive:{
         0:{
@@ -62,3 +62,13 @@ var typed = new Typed(".typing-1",{
     backSpeed:60,
     loop:true
 });
+
+
+
+// Project script
+function clicked(){
+return window.location.href='https://sourav-harsh.github.io/TinDog/'; 
+}
+function clicking(){
+return window.location.href='https://sourav-harsh.github.io/DrumKit/'; 
+}
