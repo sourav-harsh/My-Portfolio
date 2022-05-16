@@ -672,10 +672,6 @@ body {
   -webkit-transition: background-color 150ms ease-out !important;
   transition: background-color 150ms ease-out !important;
 }
-/* section .title::before{
-    background-color: cyan;
-} */
-
 body.day-background {
   background: #FFDB88;
 }
@@ -808,6 +804,15 @@ body.day-background {
     background-color: #15181f;
     color: #e5e5e5;
   }
+  .dark-theme p{
+    box-shadow: 0 0 20px rgba(0,139,253,0.25); 
+  }
+  .dark-theme section .title::before{
+    background: #fff;
+  }
+  .dark-theme section .title::after{
+    background: #15181f;
+  }
   .dark-theme #toggle{
     background-color: #ffffff;
   }
@@ -844,6 +849,6 @@ p{
     line-height: 32px;
     padding: 15px;
     text-align: justify;
-    box-shadow: 0 0 20px rgba(0,139,253,0.25); 
+    
 }
 
