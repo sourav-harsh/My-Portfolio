@@ -72,12 +72,11 @@ return window.location.href='https://sourav-harsh.github.io/TinDog/';
 function clicking(){
 return window.location.href='https://sourav-harsh.github.io/DrumKit/'; 
 }
+function clicks(){
+    return window.location.href='https://sourav-harsh.github.io/My-Portfolio/';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
     document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
 });
- 
-// document.getElementsById("title").addEventListener("click", function(){
-//     document.getElementsByTagName('section')[0].classList.toggle("dark-theme");
-// });
