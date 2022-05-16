@@ -68,6 +68,7 @@ background: crimson;
   font-size: 23px;
   cursor: pointer;
   display: none;
+  padding: 0 100px 0 0;
 }
 .scroll-up-btn{
 position: fixed;
@@ -544,6 +545,9 @@ footer span a:hover{
 /* responsive media query start */
 @media(max-width:1300px)
 {
+  #nightIcon{
+    top:-3px;
+  }
 .home .max-width{
   margin-left: 0px;
 }
@@ -654,6 +658,19 @@ footer span a:hover{
   .services .serv-content .card{
     width: 100%;
   }
+  .toggle-button{
+    right: 20px;
+  }
+  #dayIcon{
+    right: 15px;
+  }
+  #nightIcon{
+    left: 59px;
+    top: -23px;
+  }
+  .home{
+    background-size: 100%;
+  }
 }
 @media(max-width:500px)
 {
@@ -662,6 +679,19 @@ footer span a:hover{
   }
   .home .home-content .text-3{
     font-size: 27px;
+  }
+  .toggle-button{
+    right: 20px;
+  }
+  #dayIcon{
+    right: 15px;
+  }
+  #nightIcon{
+    left: 59px;
+    top: -23px;
+  }
+  .home{
+    background-size: 100%;
   }
 }
 
@@ -698,7 +728,7 @@ body.day-background {
   position: relative;
   width: 18px;
   height: 18px;
-  top: -3px;
+  /* top: -3px; */
   margin: 0 7px;
   fill: #F9CEEE;
 }
