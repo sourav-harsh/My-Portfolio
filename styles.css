@@ -562,18 +562,27 @@ footer span a:hover{
 }
 @media(max-width:1104px)
 {
+  #nightIcon{
+    top:-3px;
+  }
 .home .max-width{
   margin-left: 0px;
 }
 }
 @media(max-width:991px)
 {
+  #nightIcon{
+    top:-3px;
+  }
   .max-width{
     padding: 0 50px;
   }
 }
 @media(max-width:947px)
 {
+  #nightIcon{
+    top:-3px;
+  }
   .max-width{
     padding: 0 50px;
   }
@@ -638,6 +647,16 @@ footer span a:hover{
   .contact .contact-content .column{
     width: 100%;
     margin-bottom: 35px;
+  }
+  .toggle-button{
+    right: 20px;
+  }
+  #dayIcon{
+    right: 15px;
+  }
+  #nightIcon{
+    left: 59px;
+    top: -23px;
   }
 }
 @media(max-width:690px)

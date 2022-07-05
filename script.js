@@ -75,8 +75,26 @@ return window.location.href='https://sourav-harsh.github.io/DrumKit/';
 function clicks(){
     return window.location.href='https://sourav-harsh.github.io/My-Portfolio/';
 }
+function keeper(){
+    return window.location.href='https://keeper-app001.herokuapp.com/';
+}
+function newsletter(){
+    return window.location.href='https://loginpage007.herokuapp.com/';
+}
+function todolist(){
+    return window.location.href='https://todolist0002.herokuapp.com/';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
     document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
 });
+
+const person={
+    firstName:"harsh",
+    age:8,
+    about:function(){
+        console.log(`person is ${person.firstName} and it's age is ${person.age}`)
+    }
+}
+person.about();
