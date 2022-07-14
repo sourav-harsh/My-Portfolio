@@ -84,6 +84,9 @@ function newsletter(){
 function todolist(){
     return window.location.href='https://todolist0002.herokuapp.com/';
 }
+function worldtour(){
+    return window.location.href='https://sourav-harsh.github.io/World-Travle-App/';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
