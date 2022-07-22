@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="scroll-up-btn">
@@ -63,7 +64,7 @@
         <div class="max-width">
           <div class="home-content">
             <div class="text-1">Hello,my name is</div>
-            <div class="text-2">Sourav Kumar</div>
+            <div class="text-2 animate-charcter">Sourav Kumar</div>
             <div class="text-3">And,I'm a <span class="typing"></span></div>
             <a href="#contact" class="home-btn1">Contact me</a>
             <a href="#contact" class="home-btn2">Hire me</a>
@@ -73,12 +74,12 @@
       <!-- about section start -->
       <section class="about" id="about">
         <div class="max-width">
-          <h2 class="title">About me</h2>
+          <h2 class="title" data-aos="fade-right" data-aos-delay="350" data-aos-easing="ease-in-out-quart">About me</h2>
           <div class="about-content">
             <div class="column left">
-              <img src="image/me-2.svg" alt="">
+              <img src="image/me-2.svg" alt="" data-aos="flip-right" data-aos-delay="650" data-aos-easing="ease-in-out" >
             </div>
-            <div class="column right">
+            <div class="column right" data-aos="fade-up-left" data-aos-delay="650" data-aos-easing="ease-in-out">
               <div class="text">I'm a Sourav and I'm a <span class="typing-1"></span></div>
               <p>I'm sophomore at Asansol Engineering College passionate about programming and designing.
                 I am a detail-oriented person, always curious about things and enjoy learning. Actively looking for opportunities to use my skills for solving challenging real-world problems. A highly motivated individual and acquired skill in C/C++, Python, Web Development, attention to detail, and a solid Engineering background looking to obtain a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the Organization. 
@@ -92,23 +93,23 @@
       <!-- service section start -->
     <section class="services" id="services">
       <div class="max-width">
-        <h2 class="title">My Qualifications</h2>
+        <h2 class="title" data-aos="fade-right" data-aos-delay="350" data-aos-easing="ease-in-out">My Qualifications</h2>
         <div class="serv-content">
-          <div class="card">
-            <div class="box">
+          <div class="card" data-aos="zoom-out-up"  data-aos-delay="650" data-aos-easing="ease-in-out">
+            <div class="box" >
               <i class="fa-solid fa-laptop-code"></i>
-              <div class="text">Problem Solving</div>
+              <div class="text" >Problem Solving</div>
               <p>Learned all the DSA topics and started solving problems on daily basies on HackerRank and earned 2-stars till now.And trying to increasing problems solving skills.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-out-up" data-aos-delay="750" data-aos-easing="ease-in-out">
             <div class="box">
               <i class="fas fa-chart-line"></i>
               <div class="text">App-Design</div>
              <p>Started learining App-Design with udemy and trying to built new app to solve the daily problems,and helps the individuals in there daily uses. There daily uses</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-out-up" data-aos-delay="750" data-aos-easing="ease-in-out">
             <div class="box">
               <i class="fas fa-code"></i>
               <div class="text">Web-Design</div>
@@ -121,15 +122,15 @@
     <!-- skills section styling -->
     <section class="skills" id="skills">
       <div class="max-width">
-        <h2 class="title">My Skills</h2>
+        <h2 class="title" data-aos="fade-right" data-aos-delay="350" data-aos-easing="ease-in-out">My Skills</h2>
         <div class="skills-content">
-          <div class="column left">
+          <div class="column left" data-aos="fade-up-right" data-aos-delay="650" data-aos-easing="ease-in-out">
             <div class="text">My creative skills & expriences.</div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus atque similique ea necessitatibus odio saepe, libero impedit maiores optio. Porro hic necessitatibus nisi natus minus, inventore quia cumque molestias voluptatum enim voluptas ut animi similique. Rem nulla, reiciendis, explicabo excepturi minima itaque dolor ea facilis totam veritatis mollitia numquam inventore vitae delectus quis corporis quia enim, aspernatur non optio.</p>
             <a href="#">Read more</a>
           </div>
-          <div class="column right">
-            <div class="bar">
+          <div class="column right" data-aos="fade-up-left" data-aos-delay="650" data-aos-easing="ease-in-out">
+            <div class="bar" data-aos="slide-left">
               <div class="info">
                 <span>HTML</span>
                 <span>90%</span>
@@ -199,11 +200,11 @@
     <!-- Project section started -->
     <section class="project" id="project">
       <div class="max-width">
-        <h2 class="title">My Projects</h2>
+        <h2 class="title" data-aos="fade-right" data-aos-delay="350">My Projects</h2>
     
             <div class="carousel owl-carousel">
              
-             <div class="card box" onclick="clicked()">
+             <div class="card box" data-aos="fade-right" data-aos-delay="650" onclick="clicked()">
              <div class="box">
               <img src="image/project1.png" alt="">
               <a href="https://sourav-harsh.github.io/TinDog/" class="text">TinDog</a>
@@ -212,7 +213,7 @@
             </div>
            </div>
            
-           <div class="card box" onclick="clicking()">
+           <div class="card box" data-aos="fade-up" data-aos-delay="650" onclick="clicking()">
             <div class="box">
               <img src="image/project2.png" alt="">
               <a href="https://sourav-harsh.github.io/DrumKit/" class="text">Drum Kit</a>
@@ -221,7 +222,7 @@
             </div>
            </div>
            
-           <div class="card box " onclick="clicks()">
+           <div class="card box " data-aos="fade-right" data-aos-delay="650" onclick="clicks()">
             <div class="box">
               <img src="image/protfolio.png" alt="">
               <a href="https://sourav-harsh.github.io/My-Portfolio/" class="text">Protfolio</a>
@@ -272,7 +273,7 @@
 
     <section class="contact" id="contact">
       <div class="max-width">
-        <h2 class="title">Contact Me</h2>
+        <h2 class="title" data-aos="fade-right">Contact Me</h2>
         <div class="contact-content">
           <div class="column left">
             <div class="text">Get in touch</div>
@@ -332,5 +333,9 @@
      <span>Created By <a href="#">Sourav Kumar</a> | <span class="far fa-copyright"></span>2022 All rights reserved</span>
    </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
