@@ -94,6 +94,9 @@ function worldtour(){
 function ecommerce(){
     return window.location.href='https://glacial-anchorage-21055.herokuapp.com/';
 }
+function qrcode(){
+    return window.location.href='https://sourav-harsh.github.io/QR-Code/';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
