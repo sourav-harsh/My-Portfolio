@@ -97,6 +97,9 @@ function ecommerce(){
 function qrcode(){
     return window.location.href='https://sourav-harsh.github.io/QR-Code/';
 }
+function parallexScroll(){
+    return window.location.href='https://sourav-harsh.github.io/QR-Code/';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
