@@ -98,7 +98,7 @@ function qrcode(){
     return window.location.href='https://sourav-harsh.github.io/QR-Code/';
 }
 function parallexScroll(){
-    return window.location.href='https://sourav-harsh.github.io/QR-Code/';
+    return window.location.href='https://sourav-harsh.github.io/Parallex_Scroll_Website/';
 }
 
 // Day-Night Toggel button scripts
