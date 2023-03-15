@@ -100,6 +100,9 @@ function qrcode(){
 function parallexScroll(){
     return window.location.href='https://sourav-harsh.github.io/Parallex_Scroll_Website/';
 }
+function productCard(){
+    return window.location.href='https://sourav-harsh.github.io/Product_Card/';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
