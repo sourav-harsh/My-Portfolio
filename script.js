@@ -106,6 +106,9 @@ function productCard(){
 function hoverEffect(){
     return window.location.href='https://sourav-harsh.github.io/hover-effect/';
 }
+function PizzaShop(){
+    return window.location.href='https://sweet-frangollo-3d3d56.netlify.app/';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
