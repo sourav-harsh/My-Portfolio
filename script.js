@@ -103,6 +103,9 @@ function parallexScroll(){
 function productCard(){
     return window.location.href='https://sourav-harsh.github.io/Product_Card/';
 }
+function hoverEffect(){
+    return window.location.href='https://sourav-harsh.github.io/hover-effect/';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
