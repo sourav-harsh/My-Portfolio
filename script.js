@@ -80,13 +80,13 @@ function clicks(){
     return window.location.href='https://sourav-harsh.github.io/My-Portfolio/';
 }
 function keeper(){
-    return window.location.href='https://keeper-app001.herokuapp.com/';
+    return window.location.href='https://amazing-kitsune-29ffe5.netlify.app/';
 }
 function newsletter(){
     return window.location.href='https://loginpage007.herokuapp.com/';
 }
 function todolist(){
-    return window.location.href='https://todolist0002.herokuapp.com/';
+    return window.location.href='https://sage-dango-c5202e.netlify.app/';
 }
 function worldtour(){
     return window.location.href='https://sourav-harsh.github.io/World-Travle-App/';
