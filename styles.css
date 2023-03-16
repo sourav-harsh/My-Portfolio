@@ -431,28 +431,28 @@ h2{
   width: 90%;
 }
 .skills .skills-content .right .css::before {
-  width: 60%;
+  width: 90%;
 }
 .skills .skills-content .right .js::before {
-  width: 40%;
+  width: 80%;
 }
 .skills .skills-content .right .php::before {
-  width: 50%;
+  width: 70%;
 }
 .skills .skills-content .right .c::before {
-  width: 60%;
+  width: 90%;
 }
 .skills .skills-content .right .dsa::before {
-  width: 65%;
+  width: 80%;
 }
 .skills .skills-content .right .node::before {
-  width: 45%;
+  width: 85%;
 }
 .skills .skills-content .right .react::before {
-  width: 25%;
+  width: 95%;
 }
 .skills .skills-content .right .mysql::before {
-  width: 50%;
+  width: 60%;
 }
 
 /* Project styling section */
