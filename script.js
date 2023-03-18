@@ -109,6 +109,9 @@ function hoverEffect(){
 function PizzaShop(){
     return window.location.href='https://sweet-frangollo-3d3d56.netlify.app/';
 }
+function ecommerceShop(){
+    return window.location.href='https://dapper-figolla-fb5cd2.netlify.app/';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
