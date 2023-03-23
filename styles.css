@@ -146,9 +146,12 @@ section .title::after {
   pointer-events: auto;
 }
 /*home section styling*/
+.home .banner{
+  z-index: -1;
+}
 .home {
   display: flex;
-  background: url("image/banner.jpg") no-repeat center ;
+  background: url("image/banner.jpg") no-repeat center;
 
   background-size: 100%;
   height: 100vh;
@@ -168,9 +171,8 @@ section .title::after {
   margin-left: -3px;
 }
 
-.animate-charcter
-{
-   /* text-transform: uppercase; */
+.animate-charcter {
+  /* text-transform: uppercase; */
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -188,7 +190,7 @@ section .title::after {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-      font-size: 190px;
+  font-size: 190px;
 }
 
 @keyframes textclip {
@@ -196,7 +198,6 @@ section .title::after {
     background-position: 200% center;
   }
 }
-
 
 .home .home-content .text-3 {
   font-size: 40px;
@@ -218,26 +219,39 @@ section .title::after {
   transition: all 0.3s ease;
   position: relative;
   animation: mymove 2s forwards;
- animation-delay: 8ms;
+  animation-delay: 8ms;
   left: -300px;
-
 }
-h2{
+h2 {
   position: relative;
   animation: letter 2s forwards;
 }
 @keyframes letter {
-  0%{left:-2000px;}
+  0% {
+    left: -2000px;
+  }
   /* 50%{top: -20px;} */
-  100%{left: 10px;}
+  100% {
+    left: 10px;
+  }
 }
 
 @keyframes mymove {
-  0%   {left: 0px;}
-  15%{left: -200px;}
-  25%  {left: 0px;}
-  50%{left:-150px;}
-  100% {left: 0px;}
+  0% {
+    left: 0px;
+  }
+  15% {
+    left: -200px;
+  }
+  25% {
+    left: 0px;
+  }
+  50% {
+    left: -150px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 .home .home-content .home-btn2 {
@@ -255,11 +269,21 @@ h2{
   right: -300px;
 }
 @keyframes mymove2 {
-  0%   {right: 0px;}
-  15%{right: -200px;}
-  25%  {right: 0px;}
-  50%{right:-150px;}
-  100% {right: 0px;}
+  0% {
+    right: 0px;
+  }
+  15% {
+    right: -200px;
+  }
+  25% {
+    right: 0px;
+  }
+  50% {
+    right: -150px;
+  }
+  100% {
+    right: 0px;
+  }
 }
 .home .home-content .home-btn1:hover {
   color: crimson;
@@ -629,7 +653,7 @@ footer span a:hover {
 }
 
 /* responsive media query start */
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   #nightIcon {
     top: -3px;
   }
@@ -637,13 +661,13 @@ footer span a:hover {
     margin-left: 0px;
   }
 }
-@media (max-width: 1104px) {
+@media screen and (max-width: 1104px) {
   .about .about-content .left img {
     height: 350px;
     width: 350px;
   }
 }
-@media (max-width: 1104px) {
+@media screen and (max-width: 1104px) {
   #nightIcon {
     top: -3px;
   }
@@ -651,7 +675,7 @@ footer span a:hover {
     margin-left: 0px;
   }
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   #nightIcon {
     top: -3px;
   }
@@ -659,7 +683,7 @@ footer span a:hover {
     padding: 0 50px;
   }
 }
-@media (max-width: 947px) {
+@media screen and (max-width: 947px) {
   #nightIcon {
     top: -3px;
   }
@@ -739,7 +763,7 @@ footer span a:hover {
     top: -23px;
   }
 }
-@media (max-width: 690px) {
+@media screen and (max-width: 690px) {
   .max-width {
     padding: 0 23px;
   }
@@ -770,7 +794,7 @@ footer span a:hover {
     background-size: 100%;
   }
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;
   }

@@ -112,6 +112,9 @@ function PizzaShop(){
 function ecommerceShop(){
     return window.location.href='https://dapper-figolla-fb5cd2.netlify.app/';
 }
+function cocktailapp(){
+    return window.location.href='https://comforting-dodol-5761b2.netlify.app';
+}
 
 // Day-Night Toggel button scripts
 document.getElementById("cb1").addEventListener("click", function(){
