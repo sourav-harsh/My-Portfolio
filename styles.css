@@ -30,7 +30,7 @@ footer {
 .skills .skills-content,
 .contact .contact-content {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -152,15 +152,14 @@ section .title::after {
 .home {
   display: flex;
   background: url("image/banner.jpg") no-repeat center;
-
-  background-size: 100%;
+  background-size: cover;
   height: 100vh;
   color: #fff;
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
 }
 .home .max-width {
-  margin: auto 0 auto 40px;
+  margin: auto 0 auto 0;
 }
 .home .home-content .text-1 {
   font-size: 27px;
@@ -372,6 +371,7 @@ h2 {
 }
 .services .serv-content .card .box {
   transition: all 0.3s ease;
+    height: 100%;
 }
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
@@ -458,7 +458,7 @@ h2 {
   width: 90%;
 }
 .skills .skills-content .right .js::before {
-  width: 80%;
+  width: 95%;
 }
 .skills .skills-content .right .php::before {
   width: 70%;
@@ -476,7 +476,7 @@ h2 {
   width: 95%;
 }
 .skills .skills-content .right .mysql::before {
-  width: 60%;
+  width: 80%;
 }
 
 /* Project styling section */
@@ -578,7 +578,7 @@ h2 {
   font-weight: 500;
 }
 .contact .contact-content .info .sub-title {
-  color: #333;
+  color: #343434;
 }
 .contact .right form .fields {
   display: flex;
@@ -609,6 +609,11 @@ h2 {
   padding: 0 15px;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
+}
+
+.contact .right form .field input::placeholder,
+.contact .right form .textarea textarea::placeholder {
+    color: #111111;
 }
 
 .contact .right form .textarea textarea {
@@ -748,7 +753,7 @@ footer span a:hover {
     margin-bottom: 20px;
   }
   .skills .skills-content .column,
-  .contact .contact-content .column {
+  .contactcontact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
   }
@@ -834,6 +839,8 @@ body.day-background {
   left: 96%;
   margin-left: -76px;
   margin-top: -18px;
+    display: flex;
+    align-items: center;
 }
 
 #dayIcon {
@@ -974,6 +981,19 @@ body.day-background {
   background-color: #15181f;
   color: #e5e5e5;
 }
+
+.dark-theme .about {
+    background-color: #15181f;
+}
+
+.dark-theme .contact .right form .field input::placeholder,
+.dark-theme .contact .right form .textarea textarea::placeholder {
+    color: #e5e5e5;
+}
+
+.dark-theme .contact .contact-content .info .sub-title {
+    color: #e5e5e5;
+}
 .dark-theme p {
   box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
 }
@@ -983,6 +1003,7 @@ body.day-background {
 .dark-theme section .title::after {
   background: #15181f;
 }
+
 .dark-theme #toggle {
   background-color: #ffffff;
 }

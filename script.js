@@ -1,3 +1,14 @@
+(()=> {
+    const currentYearContainer = document.getElementById('current-year');
+    const toggleButton=document.getElementById('cb1');
+    const getTheme = localStorage.getItem('theme');
+    if(getTheme){
+        document.body.classList.add(getTheme);
+        toggleButton.checked = getTheme === 'dark-theme';
+    }
+    currentYearContainer.innerText= `${new Date().getFullYear()}`;
+})()
+
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY>20)
@@ -62,19 +73,17 @@ var typed = new Typed(".typing-1",{
     backSpeed:60,
     loop:true
 });
-
 AOS.init({
     duration: 1200,
   })
- 
 
 
 // Project script
 function clicked(){
-return window.location.href='https://sourav-harsh.github.io/TinDog/'; 
+return window.location.href='https://sourav-harsh.github.io/TinDog/';
 }
 function clicking(){
-return window.location.href='https://sourav-harsh.github.io/DrumKit/'; 
+return window.location.href='https://sourav-harsh.github.io/DrumKit/';
 }
 function clicks(){
     return window.location.href='https://sourav-harsh.github.io/My-Portfolio/';
@@ -116,10 +125,17 @@ function cocktailapp(){
     return window.location.href='https://comforting-dodol-5761b2.netlify.app';
 }
 
-// Day-Night Toggel button scripts
-document.getElementById("cb1").addEventListener("click", function(){
+
+// Day-Night Toggle button scripts
+// document.getElementsByClassName("").addEventListener("click", function(){
+//     console.log('Theme Button toggled')
+//     document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
+// });
+
+function toggleTheme(){
     document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
-});
+    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark-theme' : '');
+}
 
 const person={
     firstName:"harsh",
@@ -129,8 +145,6 @@ const person={
     }
 }
 person.about();
-
-
 
 
 // ##############################Animation###############################

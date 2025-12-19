@@ -6,7 +6,7 @@
     <title>Personal Portfolio website</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="./image/istockphoto-1201592284-612x612.jpeg" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/a076d05399.js"crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/f935d1850d.js" crossorigin="anonymous"></script>
@@ -14,7 +14,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
   </head>
   <body>
     <div class="scroll-up-btn">
@@ -39,7 +38,7 @@
         </div>
 
         <!-- Day Night toggle button -->
-        <div class="button-con">
+        <button class="button-con" id="theme-toggle-1">
           <label for='cb1'>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
               <g id="Sun">
@@ -49,14 +48,14 @@
               </g>
             </svg>
           </label>
-          <input class='toggle' type='checkbox' id="cb1">
+          <input class='toggle' type='checkbox' id="cb1"  onclick="toggleTheme()">
           <label class='toggle-button' for='cb1'></label>
           <label for='cb1'>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
               <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
             </svg>
           </label>
-        </div>
+        </button>
       </div>
     </nav>
 
@@ -69,7 +68,7 @@
             <div class="text-2 animate-charcter">Sourav Kumar</div>
             <div class="text-3">And,I'm a <span class="typing"></span></div>
             <a href="#contact" class="home-btn1">Contact me</a>
-            <a href="#contact" class="home-btn2">Hire me</a>
+            <a href="mailto:s4056751@gmail.com?subject=Regarding%20Hiring&body=Hello%2C%20I%20want%20to%20hire%20you" class="home-btn2">Hire me</a>
           </div>
         </div>
       </section>
@@ -83,15 +82,19 @@
             </div>
             <div class="column right" data-aos="fade-up-left" data-aos-delay="650" data-aos-easing="ease-in-out">
               <div class="text">I'm a Sourav and I'm a <span class="typing-1"></span></div>
-              <p>I'm sophomore at Asansol Engineering College passionate about programming and designing.
-                I am a detail-oriented person, always curious about things and enjoy learning. Actively looking for opportunities to use my skills for solving challenging real-world problems. A highly motivated individual and acquired skill in C/C++, Python, Web Development, attention to detail, and a solid Engineering background looking to obtain a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the Organization. 
-                Always open to synergies and collaborations. Email me at s4056751@gmail.com</p>
-                <a href="https://drive.google.com/file/d/1CgFddYwUBgNb8qoRwY5gG6weq-e83q5O/view?usp=sharing" target="_blank">Download CV</a>
+              <p>Hi,I am Sourav Kumar, a software engineer with one and a half years of professional experience and an alumnus of Asansol Engineering College, where I earned my B.Tech Degree in Information Technology. <br> Passionate about designing and developing scalable, efficient, and user-friendly software solutions, I bring expertise in Java, TypeScript, JavaScript, data structures and algorithms, custom web components, microservices, Quarks, Maven, Node.js, and version control.
+
+                  I am a detail-oriented, hardworking individual who thrives on curiosity and continuous learning. Currently, I am expanding my knowledge in AWS, Docker, cybersecurity, AI, and systems design to broaden my capabilities and address complex challenges.
+
+                  I am dedicated to applying best practices, leveraging innovative technologies, and collaborating effectively to create impactful software solutions. I look forward to opportunities where I can contribute meaningfully and grow as a professional in the software engineering field.
+
+                  <br>Always open to synergies and collaborations. Email me at s4056751@gmail.com</p>
+                <a href="https://drive.google.com/file/d/1fpEJ2lgNWtn10o7cNS7PNB1swdBy6QNX/view?usp=sharing" target="_blank" id="download-cv">Download CV</a>
               </div>
             </div>
           </div>
         </section>
-        
+
       <!-- service section start -->
     <section class="services" id="services">
       <div class="max-width">
@@ -101,21 +104,21 @@
             <div class="box" >
               <i class="fa-solid fa-laptop-code"></i>
               <div class="text" >Problem Solving</div>
-              <p>Learned all the DSA topics and started solving problems on daily basies on HackerRank and earned 2-stars till now.And trying to increasing problems solving skills.</p>
+              <p>Solved 350+ LeetCode problems across data structures and algorithms, strengthening analytical thinking, optimization skills, and code efficiency, and consistently applying this algorithmic expertise to design, implement, and deliver scalable, real-world features in production systems.</p>
             </div>
           </div>
           <div class="card" data-aos="zoom-out-up" data-aos-delay="750" data-aos-easing="ease-in-out">
             <div class="box">
               <i class="fas fa-chart-line"></i>
-              <div class="text">App-Design</div>
-             <p>Started learining App-Design with udemy and trying to built new app to solve the daily problems,and helps the individuals in there daily uses. There daily uses</p>
+              <div class="text">App-Developer</div>
+             <p>Designed, developed, and optimized cross-platform mobile applications using React Native, delivering high-performance across Android and iOS platforms. Implemented custom UI components, smooth navigation flows, and efficient state management. Successfully built, tested, and launched multiple production-ready applications on the Google Play Store.</p>
             </div>
           </div>
           <div class="card" data-aos="zoom-out-up" data-aos-delay="750" data-aos-easing="ease-in-out">
             <div class="box">
               <i class="fas fa-code"></i>
-              <div class="text">Web-Design</div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni architecto incidunt adipisci libero iure earum, dolorem cupiditate facere tenetur, delectus.</p>
+              <div class="text">Web-Developer</div>
+              <p>Applied strong problem-solving skills to design and implement robust, scalable web solutions, translating business requirements into high-quality, production-ready features using React.js, Node.js, Express.js, MongoDB, Java, and Quarkus, with a focus on efficient state management, responsive design, and cross-browser compatibility.</p>
             </div>
           </div>
         </div>
@@ -128,7 +131,7 @@
         <div class="skills-content">
           <div class="column left" data-aos="fade-up-right" data-aos-delay="650" data-aos-easing="ease-in-out">
             <div class="text">My creative skills & expriences.</div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus atque similique ea necessitatibus odio saepe, libero impedit maiores optio. Porro hic necessitatibus nisi natus minus, inventore quia cumque molestias voluptatum enim voluptas ut animi similique. Rem nulla, reiciendis, explicabo excepturi minima itaque dolor ea facilis totam veritatis mollitia numquam inventore vitae delectus quis corporis quia enim, aspernatur non optio.</p>
+            <p>Passionate about designing and developing scalable, efficient, and user-friendly software solutions, I bring expertise in Java, TypeScript, JavaScript, data structures and algorithms, custom web components, microservices, Quarks, Maven, Node.js, and version control. I am a detail-oriented, hardworking individual who thrives on curiosity and continuous learning. Currently, I am expanding my knowledge in AWS, Docker, cybersecurity, AI, and systems design to broaden my capabilities and address complex challenges. I am dedicated to applying best practices, leveraging innovative technologies, and collaborating effectively to create impactful software solutions. I look forward to opportunities where I can contribute meaningfully and grow as a professional in the software engineering field.</p>
             <a href="#">Read more</a>
           </div>
           <div class="column right" data-aos="fade-up-left" data-aos-delay="650" data-aos-easing="ease-in-out">
@@ -141,28 +144,28 @@
             </div>
             <div class="bar">
               <div class="info">
-                <span>CSS</span>
+                <span>CSS / TailwindCSS</span>
                 <span>90%</span>
               </div>
               <div class="line css"></div>
             </div>
             <div class="bar">
               <div class="info">
-                <span>JavaScript</span>
-                <span>80%</span>
+                <span>JavaScript / TypeScript</span>
+                <span>95%</span>
               </div>
               <div class="line js"></div>
             </div>
             <div class="bar">
               <div class="info">
-                <span>PHP</span>
+                <span>ExpressJS</span>
                 <span>70%</span>
               </div>
               <div class="line php"></div>
             </div>
             <div class="bar">
               <div class="info">
-                <span>C/C++/Python</span>
+                <span>Java/C/C++/Python</span>
                 <span>90%</span>
               </div>
               <div class="line c"></div>
@@ -190,8 +193,8 @@
             </div>
             <div class="bar">
               <div class="info">
-                <span>MySQL</span>
-                <span>60%</span>
+                <span>MongoDB</span>
+                <span>80%</span>
               </div>
               <div class="line mysql"></div>
             </div>
@@ -203,42 +206,42 @@
     <section class="project" id="project">
       <div class="max-width">
         <h2 class="title" data-aos="fade-right" data-aos-delay="350">My Projects</h2>
-    
+
             <div class="carousel owl-carousel">
-             
+
              <div class="card box" data-aos="fade-right" data-aos-delay="650" onclick="clicked()">
              <div class="box">
               <img src="image/project1.png" alt="">
               <a href="https://sourav-harsh.github.io/TinDog/" class="text">TinDog</a>
               <p>It is a website of intresting dog meeting,with using of Html,Css and JavaScript</p>
-         
+
             </div>
            </div>
-           
+
            <div class="card box" data-aos="fade-up" data-aos-delay="650" onclick="clicking()">
             <div class="box">
               <img src="image/project2.png" alt="">
               <a href="https://sourav-harsh.github.io/DrumKit/" class="text">Drum Kit</a>
               <p>It is a website of drum kit with keyboard typing sound,only on Html,Css,JavaScript.</p>
-          
+
             </div>
            </div>
-           
+
            <div class="card box " data-aos="fade-left" data-aos-delay="650" onclick="clicks()">
             <div class="box">
               <img src="image/protfolio.png" alt="">
               <a href="https://sourav-harsh.github.io/My-Portfolio/" class="text">Protfolio</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit.</p>
-            
+
             </div>
            </div>
-           
+
            <div class="card box" onclick="keeper()">
             <div class="box">
               <img src="image/KeeperApp.png" alt="">
               <a href="https://amazing-kitsune-29ffe5.netlify.app/" class="text">Keeper App</a>
               <p>This is the react app. The key feature is of this app is to take a note and store it. And after that you can delete it too.</p>
-          
+
             </div>
            </div>
            <div class="card box" onclick="newsletter()">
@@ -246,7 +249,7 @@
               <img src="image/Newsletter.png" alt="">
               <a href="https://loginpage007.herokuapp.com/" class="text">Newsletter Subscribe</a>
               <p>This is the react app.The key feature is of this app is to subscribe and collect the real time emails.</p>
-          
+
             </div>
            </div>
            <div class="card box" onclick="worldtour()">
@@ -254,16 +257,16 @@
               <img src="image/Screenshot 2022-07-14 at 1.13.07 PM.png" alt="">
               <a href="https://sourav-harsh.github.io/World-Travle-App/" class="text">World Travel</a>
               <p>This is the react app.The key feature is of this app is to subscribe and collect the real time emails.</p>
-          
+
             </div>
            </div>
-        
+
            <div class="card box" onclick="todolist()">
             <div class="box">
               <img src="image/TodosList.png" alt="">
               <a href="https://sage-dango-c5202e.netlify.app/" class="text">Todos-list App</a>
               <p>This is the react app. The key feature is of this app is to add your daily goals and use this as a checklist.</p>
-           
+
             </div>
           </div>
            <div class="card box" onclick="ecommerce()">
@@ -271,7 +274,7 @@
               <img src="image/ecommerce.png" alt="">
               <a href="https://glacial-anchorage-21055.herokuapp.com/" class="text">Ecommerce App</a>
               <p>This is the next.js app. The key feature of this app is a full stack web dev with frontend, backend and database .</p>
-           
+
             </div>
           </div>
            <div class="card box" onclick="qrcode()">
@@ -323,13 +326,19 @@
               <p>This is the a simple html,css,js app. The key feature of this app is a full stack web dev with frontend.</p>
             </div>
           </div>
-          
+                <div class="card box">
+            <div class="box">
+              <img src="image/youtube-clone.jpeg" alt="">
+              <a href="#" class="text">Youtube Clone</a>
+              <p>This is a fullstack app use MERN stack to build the entire project. Also done SRP which used the JWT to authentication.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- Contact section started -->
-
     <section class="contact" id="contact">
       <div class="max-width">
         <h2 class="title" data-aos="fade-right">Contact Me</h2>
@@ -389,7 +398,7 @@
 
     <!-- footer section start -->
    <footer>
-     <span>Created By <a href="#">Sourav Kumar</a> | <span class="far fa-copyright"></span>2022 All rights reserved</span>
+       <span>Created By <a href="#">Sourav Kumar</a> | <span class="far fa-copyright"></span><span id="current-year">2022</span> All rights reserved</span>
    </footer>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
